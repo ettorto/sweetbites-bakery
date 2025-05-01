@@ -1,0 +1,227 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff9f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #f8c8a0;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #552200;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #552200;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: border-bottom 0.2s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    border-bottom: 2px solid #552200;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://source.unsplash.com/1600x600/?bakery') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px #00000055;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px #00000055;
+  }
+  
+  .btn {
+    background-color: #552200;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #704200;
+  }
+  
+  /* Page Headers */
+  .page-header {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    background-color: #fff0e5;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .page-header p {
+    font-size: 1.1rem;
+  }
+  
+  /* Gallery / Menu */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .item p {
+    padding: 1rem;
+    font-weight: 500;
+  }
+  
+  /* About Section */
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .about-text {
+    flex: 1 1 400px;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .contact-card {
+    background-color: #fff0e5;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .contact-card h2 {
+    margin-bottom: 0.5rem;
+    color: #552200;
+  }
+  
+  .contact-card a {
+    color: #552200;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .contact-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f8c8a0;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.95rem;
+    color: #552200;
+    margin-top: 3rem;
+  }
+  
+  footer a {
+    color: #552200;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 0.5rem;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+  
+    .about-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
